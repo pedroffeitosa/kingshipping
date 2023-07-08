@@ -5,7 +5,7 @@ const app = express()
 
 app.use(bodyParser.json())
 
-app.post('/calcular-frete', (req, res) => {
+app.get('/calcular-frete', (req, res) => {
   const { unidade } = req.body
 
   // Realize o cálculo do frete com base nos dados fornecidos
